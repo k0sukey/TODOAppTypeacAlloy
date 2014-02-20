@@ -1,0 +1,21 @@
+<Alloy>
+	<Window platform="android" class="container" title="myTODO">
+		<Menu>
+			<MenuItem class="menu" title="未完了" onClick="doIncomplete"/>
+			<MenuItem class="menu" title="完了" onClick="doComplete"/>
+			<MenuItem class="menu" title="全て" onClick="doAll"/>
+		</Menu>
+		<TableView id="table" dataCollection="todos" dataTransform="doTransform" dataFilter="doFilter">
+			<HeaderView>
+				<View id="addtask">
+					<TextField id="textfield" hintText="New task"/>
+					<Button id="addbutton" onClick="doAddtask">登録</Button>
+				</View>
+			</HeaderView>
+			<TableViewRow taskid="{id}">
+				<Label id="task" text="{task}"/>
+				<Label id="created_at" text="{created_at}"/>
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

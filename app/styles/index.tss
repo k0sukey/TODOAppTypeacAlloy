@@ -1,0 +1,68 @@
+'.container': {
+	backgroundColor: '#fff'
+},
+'.menu': {
+	showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
+	},
+'TableView': {
+	top: 0,
+	right: 0,
+	bottom: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL	
+},
+'TableView[platform=ios]': {
+	bottom: 44	
+},
+'TableViewRow': {
+	width: Ti.UI.FILL,
+	height: 44	
+},
+'#addtask': {
+	width: Ti.UI.FILL,
+	height: 44
+},
+'#textfield': {
+	left: 15,
+	width: Alloy.CFG.TextFieldWidth,
+	height: 44
+},
+'#textfield[platform=android]': {
+	right: 60,
+	left: 0,
+	width: Ti.UI.FILL
+},
+'#addbutton': {
+	right: 0,
+	width: 44,
+	height: 44
+},
+'#addbutton[platform=android]': {
+	width: 60
+},
+'#task': {
+	top: 4,
+	left: 15,
+	color: '#000'
+},
+'#created_at': {
+	bottom: 4,
+	left: 15,
+	color: '#ccc',
+	font: {
+		fontSize: 12
+	}
+},
+'#footer': {
+	right: 0,
+	bottom: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: 44,
+	backgroundColor: '#fff'
+},
+'TabbedBar': {
+	index: 0,
+	style: Ti.UI.iPhone.SystemButtonStyle.BAR
+}
